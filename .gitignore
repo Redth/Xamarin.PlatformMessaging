@@ -12,6 +12,11 @@
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
+*.snk
+*.DS_Store
+native_outputs/
+native_test_lib_outputs/
+xamarin_outputs/
 
 # Mono auto generated files
 mono_crash.*

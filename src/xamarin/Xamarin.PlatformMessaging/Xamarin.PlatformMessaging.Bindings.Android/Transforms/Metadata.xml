@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+    <attr path="/api/package[@name='com.xamarin.platformmessaging']" name="managedName">Xamarin.PlatformMessaging.Android</attr>
+    <remove-node path="/api/package[@name='com.xamarin.platformmessaging']/class[@name='BuildConfig']" />
+    <attr path="/api/package[@name='com.xamarin.platformmessaging']/class[@name='MessageChannel']" name="visibility">internal</attr>
+    <attr path="/api/package[@name='com.xamarin.platformmessaging']/class[@name='MessageChannel']" name="visibility">internal</attr>
+    <attr path="/api/package[@name='com.xamarin.platformmessaging']/interface[@name='MessageHandler']" name="visibility">internal</attr>
+    <attr path="/api/package[@name='com.xamarin.platformmessaging']/interface[@name='MessageResponseHandler']" name="visibility">internal</attr>
+</metadata>

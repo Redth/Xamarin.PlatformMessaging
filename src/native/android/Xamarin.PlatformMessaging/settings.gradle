@@ -1,0 +1,3 @@
+include ':xamarinplatformmessaging'
+include ':app'
+rootProject.name = "XamarinPlatformMessaging"
