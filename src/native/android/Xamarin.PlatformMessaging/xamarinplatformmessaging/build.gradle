@@ -36,3 +36,45 @@ android {
 
 dependencies {
 }
+
+
+// Because the components are created only during the afterEvaluate phase, you must
+// configure your publications using the afterEvaluate() lifecycle method.
+afterEvaluate {
+    publishing {
+        publications {
+            // Creates a Maven publication called "release".
+            release(MavenPublication) {
+                // Applies the component for the release build variant.
+                from components.release
+
+                // You can then customize attributes of the publication as shown below.
+                groupId = 'com.xamarin'
+                artifactId = 'platformmessaging'
+                version = '0.1.0'
+
+                pom {
+                    name = 'Xamarin Platform Messaging'
+                    description = 'Messaging Bridge API for Xamarin <-> Android'
+                    url = 'https://github.com/redth/Xamarin.PlatformMessaging'
+                    licenses {
+                        license {
+                            name = "The MIT License"
+                            url = "http://www.opensource.org/licenses/MIT"
+                        }
+                    }
+                    developers {
+                        developer {
+                            id = 'redth'
+                            name = 'Redth'
+                        }
+                    }
+                    scm {
+                        connection = 'scm:git:git://github.com/redth/Xamarin.PlatformMessaging.git'
+                        url = 'http://github.com/redth/Xamarin.PlatformMessaging'
+                    }
+                }
+            }
+        }
+    }
+}
