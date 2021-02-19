@@ -49,8 +49,8 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.xamarin'
-                artifactId = 'platformmessaging'
+                groupId = 'com.github.redth'
+                artifactId = 'xamarin-platform-messaging'
                 version = '0.1.0'
 
                 pom {
