@@ -1,7 +1,6 @@
 plugins {
     id 'com.android.library'
     id 'maven-publish'
-    id 'com.github.dcendents.android-maven'
 }
 
 
@@ -50,8 +49,8 @@ afterEvaluate {
                 from components.release
 
                 // You can then customize attributes of the publication as shown below.
-                groupId = 'com.github.redth'
-                artifactId = 'xamarin-platform-messaging'
+                groupId = 'com.xamarin'
+                artifactId = 'platformmessaging'
                 version = '0.1.0'
 
                 pom {
